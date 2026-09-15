@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+
+:root {
+  font-family: 'Space Grotesk', sans-serif;
+  color: #26231f;
+  background: #f4efe6;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+}
+
+.page-shell {
+  align-items: center;
+  background: radial-gradient(circle at 15% 10%, #fffaf3 0, transparent 30%), #f4efe6;
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 2rem;
+}
+
+.hello-card {
+  background: #fffaf3;
+  border: 1px solid rgba(38, 35, 31, 0.16);
+  box-shadow: 12px 12px 0 #d8cdbd;
+  max-width: 42rem;
+  padding: clamp(2.25rem, 7vw, 5rem);
+  width: 100%;
+}
+
+.eyebrow,
+.status {
+  color: #756b60;
+  font-family: 'DM Mono', monospace;
+  font-size: 0.75rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.eyebrow {
+  margin: 0 0 2rem;
+}
+
+h1 {
+  font-size: clamp(3.5rem, 11vw, 7rem);
+  letter-spacing: -0.06em;
+  line-height: 0.9;
+  margin: 0;
+}
+
+h1 span {
+  color: #e35d3f;
+}
+
+.intro {
+  color: #514a42;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin: 2rem 0;
+}
+
+button {
+  background: #e35d3f;
+  border: 0;
+  border-radius: 999px;
+  color: #fffaf3;
+  cursor: pointer;
+  font: inherit;
+  font-weight: 600;
+  padding: 0.85rem 1.5rem;
+}
+
+button:hover {
+  background: #c94b32;
+}
+
+button:focus-visible {
+  outline: 3px solid #26231f;
+  outline-offset: 4px;
+}
+
+.status {
+  margin: 1.25rem 0 0;
+}
+
+@media (max-width: 520px) {
+  .page-shell {
+    padding: 1.25rem;
+  }
+
+  .hello-card {
+    box-shadow: 7px 7px 0 #d8cdbd;
+  }
+}
